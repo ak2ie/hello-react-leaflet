@@ -9,7 +9,7 @@ import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Props } from "next/script";
 import { getStaticProps } from "../pages/map-page";
 
-delete L.Icon.Default.prototype._getIconUrl;
+// delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconUrl: markerIcon.src,
   iconRetinaUrl: markerIcon2x.src,
@@ -29,7 +29,7 @@ const Map = ({ geo }: InferGetStaticPropsType<typeof getStaticProps>) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <GeoJSON data={geo} />
-      <Marker position={[51.505, -0.09]}>
+      <Marker position={[37.49895637, 139.89363995]}>
         <Popup>
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
