@@ -19,8 +19,8 @@ L.Icon.Default.mergeOptions({
 const Map = ({ geo }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <MapContainer
-      center={[37.49895637, 139.89363995]}
-      zoom={19}
+      center={[37.77010858266098, 139.17535694184954]}
+      zoom={15}
       scrollWheelZoom={false}
       style={{ height: "100vh", width: "100%" }}
     >
